@@ -1,4 +1,4 @@
-function findFirstRepeated(gifts) {
+export function findFirstRepeated(gifts) {
   const registeredIds = new Set()
 
   for (const gift of gifts) {
