@@ -1,14 +1,14 @@
 function findFirstRepeated(gifts) {
-  const registeredIds = []
+  const registeredIds = new Set()
 
   for (const gift of gifts) {
     // Evaluate
-    if (registeredIds.includes(gift)) {
+    if (registeredIds.has(gift)) {
       return gift
     }
     
     // Remember
-    registeredIds.push(gift)
+    registeredIds.add(gift)
   }
 
   return -1
